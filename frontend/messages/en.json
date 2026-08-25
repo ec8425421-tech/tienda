@@ -1,0 +1,152 @@
+{
+  "Home": {
+    "welcome": "Welcome",
+    "description": "Welcome to Tienda Teya, your online nursery.",
+    "sections": "Categories",
+    "crops": "Crops",
+    "fertilizersSeeds": "Fertilizers and seeds",
+    "season": "Season"
+  },
+
+  "Header": {
+    "menu": "Menu",
+    "home": "Home",
+    "catalog": "Catalog",
+    "cart": "Cart",
+    "login": "Sign in",
+    "profile": "My profile",
+    "hello": "Hello, {name}",
+    "orders": "My orders",
+    "admin": "Admin panel",
+    "logout": "Sign out"
+  },
+
+  "Footer": {
+    "copyright": "© 2026 Tienda Teya. All rights reserved.",
+    "description": "Your online nursery."
+  },
+
+  "Catalog": {
+    "title": "Catalog",
+    "description": "Explore our products and find everything you need for your crops.",
+    "crops": "Crops",
+    "fertilizersSeeds": "Fertilizers and seeds",
+    "season": "Season",
+    "backToCatalog": "Back to catalog"
+  },
+
+  "Cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty.",
+    "viewCatalog": "View catalog",
+    "total": "Total",
+    "checkout": "Continue to checkout",
+    "remove": "Remove",
+    "increase": "Increase quantity",
+    "decrease": "Decrease quantity"
+  },
+
+  "Login": {
+    "title": "Sign in",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Sign in",
+    "register": "Create an account",
+    "forgotPassword": "Forgot your password?"
+  },
+
+  "Profile": {
+    "title": "My profile",
+    "description": "View and edit your account information.",
+    "accountInformation": "Account information",
+    "accountType": "Account type",
+    "administrator": "Administrator",
+    "client": "Customer",
+    "userId": "User ID",
+    "accountCreated": "Account created",
+    "editProfile": "Edit profile",
+    "name": "Name",
+    "email": "Email",
+    "saveChanges": "Save changes",
+    "saving": "Saving...",
+    "changePassword": "Change password",
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm new password",
+    "changePasswordButton": "Change password",
+    "changingPassword": "Changing password...",
+    "orders": "My orders",
+    "ordersDescription": "Here you can view the purchases you have made.",
+    "noOrders": "You don't have any orders yet.",
+    "viewOrder": "View order",
+    "viewAllOrders": "View all my orders",
+    "options": "Options",
+    "logout": "Sign out"
+  },
+
+  "Orders": {
+    "title": "My orders",
+    "order": "Order",
+    "date": "Date",
+    "total": "Total",
+    "paymentMethod": "Payment method",
+    "status": "Status",
+    "address": "Address",
+    "viewOrder": "View order",
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "shipped": "Shipped",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled",
+    "cash": "Cash",
+    "card": "Card",
+    "transfer": "Bank transfer",
+    "notSpecified": "Not specified"
+  },
+
+  "Checkout": {
+    "title": "Checkout",
+    "customerInformation": "Customer information",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "street": "Street",
+    "neighborhood": "Neighborhood",
+    "city": "City",
+    "state": "State",
+    "postalCode": "Postal code",
+    "references": "References",
+    "paymentMethod": "Payment method",
+    "orderSummary": "Order summary",
+    "placeOrder": "Place order"
+  },
+
+  "Contact": {
+    "title": "Contact",
+    "description": "Get in touch with us.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message"
+  },
+
+  "Stories": {
+    "title": "Store stories",
+    "close": "Close stories",
+    "loading": "Loading stories...",
+    "empty": "No stories available.",
+    "imageAlt": "Story image"
+  },
+
+  "Common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "continue": "Continue",
+    "viewMore": "View more",
+    "search": "Search",
+    "filter": "Filter",
+    "close": "Close"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "Home": {
+    "welcome": "Bienvenido",
+    "description": "Bienvenido a Tienda Teya, tu vivero en línea.",
+    "sections": "Apartados",
+    "crops": "Cultivos",
+    "fertilizersSeeds": "Fertilizantes y semillas",
+    "season": "Temporada"
+  },
+
+  "Header": {
+    "menu": "Menú",
+    "home": "Inicio",
+    "catalog": "Catálogo",
+    "cart": "Carrito",
+    "login": "Iniciar sesión",
+    "profile": "Mi perfil",
+    "hello": "Hola, {name}",
+    "orders": "Mis pedidos",
+    "admin": "Panel admin",
+    "logout": "Cerrar sesión"
+  },
+
+  "Footer": {
+    "copyright": "© 2026 Tienda Teya. Todos los derechos reservados.",
+    "description": "Tu vivero en línea."
+  },
+
+  "Catalog": {
+    "title": "Catálogo",
+    "description": "Explora nuestros productos y encuentra lo que necesitas para tus cultivos.",
+    "crops": "Cultivos",
+    "fertilizersSeeds": "Fertilizantes y semillas",
+    "season": "Temporada",
+    "backToCatalog": "Volver al catálogo"
+  },
+
+  "Cart": {
+    "title": "Carrito",
+    "empty": "Tu carrito está vacío.",
+    "viewCatalog": "Ver catálogo",
+    "total": "Total",
+    "checkout": "Continuar al checkout",
+    "remove": "Eliminar",
+    "increase": "Aumentar cantidad",
+    "decrease": "Disminuir cantidad"
+  },
+
+  "Login": {
+    "title": "Iniciar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "loginButton": "Iniciar sesión",
+    "register": "Crear una cuenta",
+    "forgotPassword": "¿Olvidaste tu contraseña?"
+  },
+
+  "Profile": {
+    "title": "Mi perfil",
+    "description": "Consulta y modifica los datos de tu cuenta.",
+    "accountInformation": "Información de la cuenta",
+    "accountType": "Tipo de cuenta",
+    "administrator": "Administrador",
+    "client": "Cliente",
+    "userId": "ID de usuario",
+    "accountCreated": "Cuenta creada",
+    "editProfile": "Editar perfil",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "saveChanges": "Guardar cambios",
+    "saving": "Guardando...",
+    "changePassword": "Cambiar contraseña",
+    "currentPassword": "Contraseña actual",
+    "newPassword": "Nueva contraseña",
+    "confirmPassword": "Confirmar nueva contraseña",
+    "changePasswordButton": "Cambiar contraseña",
+    "changingPassword": "Cambiando contraseña...",
+    "orders": "Mis pedidos",
+    "ordersDescription": "Aquí puedes consultar las compras que has realizado.",
+    "noOrders": "Todavía no tienes pedidos.",
+    "viewOrder": "Ver pedido",
+    "viewAllOrders": "Ver todos mis pedidos",
+    "options": "Opciones",
+    "logout": "Cerrar sesión"
+  },
+
+  "Orders": {
+    "title": "Mis pedidos",
+    "order": "Pedido",
+    "date": "Fecha",
+    "total": "Total",
+    "paymentMethod": "Método de pago",
+    "status": "Estado",
+    "address": "Dirección",
+    "viewOrder": "Ver pedido",
+    "pending": "Pendiente",
+    "confirmed": "Confirmado",
+    "shipped": "Enviado",
+    "delivered": "Entregado",
+    "cancelled": "Cancelado",
+    "cash": "Efectivo",
+    "card": "Tarjeta",
+    "transfer": "Transferencia",
+    "notSpecified": "No especificado"
+  },
+
+  "Checkout": {
+    "title": "Finalizar compra",
+    "customerInformation": "Información del cliente",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "street": "Calle",
+    "neighborhood": "Colonia",
+    "city": "Ciudad",
+    "state": "Estado",
+    "postalCode": "Código postal",
+    "references": "Referencias",
+    "paymentMethod": "Método de pago",
+    "orderSummary": "Resumen del pedido",
+    "placeOrder": "Realizar pedido"
+  },
+
+  "Contact": {
+    "title": "Contacto",
+    "description": "Ponte en contacto con nosotros.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje"
+  },
+
+  "Stories": {
+    "title": "Historias de la tienda",
+    "close": "Cerrar historias",
+    "loading": "Cargando historias...",
+    "empty": "No hay historias disponibles.",
+    "imageAlt": "Imagen de la historia"
+  },
+
+  "Common": {
+    "loading": "Cargando...",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "back": "Volver",
+    "continue": "Continuar",
+    "viewMore": "Ver más",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "close": "Cerrar"
+  }
+}
