@@ -11,7 +11,7 @@ export default function ContactoPage() {
   const textos =
     locale === "en"
       ? {
-          etiqueta: "TIENDA TEYA",
+          etiqueta: "RIQUEZA LOCAL",
           titulo: "Get to know us",
           descripcion:
             "We are preparing all the information about our store to share with you.",
@@ -39,12 +39,12 @@ export default function ContactoPage() {
           tiktok: "TikTok",
         }
       : {
-          etiqueta: "TIENDA TEYA",
+          etiqueta: "RIQUEZA LOCAL",
           titulo: "Conócenos",
           descripcion:
             "Estamos preparando toda la información de nuestra tienda para compartirla contigo.",
 
-          sobreTitulo: "Sobre Tienda Teya",
+          sobreTitulo: "Sobre Riqueza local",
           sobreTexto:
             "Próximamente encontrarás aquí información sobre nuestra tienda, nuestra historia y todo lo que ofrecemos.",
 

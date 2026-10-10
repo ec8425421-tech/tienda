@@ -2,27 +2,29 @@ import "../globals.css";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
 
-const locales = ["es", "en"];
+const locales = ["es", "en"] as const;
 
 export default async function LocaleLayout({
-  children,
-  params,
+children,
+params,
 }: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+children: React.ReactNode;
+params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+const { locale } = await params;
 
-  if (!locales.includes(locale)) {
-    return null;
-  }
+if (!locales.includes(locale as (typeof locales)[number])) {
+notFound();
+}
 
-  const messages = await getMessages();
+const messages = await getMessages();
 
-  return (
-    <NextIntlClientProvider messages={messages}>
-      {children}
-    </NextIntlClientProvider>
-  );
+return ( <NextIntlClientProvider
+   locale={locale}
+   messages={messages}
+ >
+{children} </NextIntlClientProvider>
+);
 }

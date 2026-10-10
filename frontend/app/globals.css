@@ -696,16 +696,11 @@ a:hover {
 ======================================== */
 
 .category-icon {
-  font-size: 0;
-
   width: 100%;
-
-  height: 130px;
+  height: 160px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   margin-bottom: 22px;
@@ -719,14 +714,13 @@ a:hover {
   overflow: hidden;
 }
 
-.category-icon::after {
-  content: "Imagen";
+.category-image {
+  display: block;
 
-  color: #8a806d;
+  width: 100%;
+  height: 100%;
 
-  font-size: 0.9rem;
-
-  letter-spacing: 0.5px;
+  object-fit: cover;
 }
 
 
@@ -4796,5 +4790,755 @@ textarea {
 
   .story-spinner {
     animation: none;
+  }
+}
+.category-card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px;
+}
+/* =====================================
+PÁGINA DE PRESENTACIÓN DE EMPRESAS
+===================================== */
+
+.empresa-pagina {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px 24px 60px;
+box-sizing: border-box;
+}
+
+.empresa-presentacion {
+display: grid;
+grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+align-items: center;
+gap: 40px;
+width: 100%;
+}
+
+.empresa-menu-contenedor {
+width: 100%;
+max-width: 560px;
+height: 440px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+background: #f7f5ef;
+border-radius: 18px;
+}
+
+.empresa-menu-imagen {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: contain;
+object-position: center;
+}
+
+.empresa-informacion {
+min-width: 0;
+}
+
+.empresa-informacion h1 {
+margin: 0 0 16px;
+font-size: clamp(1.8rem, 4vw, 2.8rem);
+line-height: 1.2;
+overflow-wrap: anywhere;
+}
+
+.empresa-informacion p {
+margin: 0 0 28px;
+font-size: 1.05rem;
+line-height: 1.8;
+color: #555;
+}
+
+.empresa-boton-catalogo {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+min-height: 48px;
+padding: 13px 26px;
+background-color: #286342;
+color: #fff;
+font-size: 1rem;
+font-weight: 600;
+text-decoration: none;
+text-align: center;
+border: 2px solid #286342;
+border-radius: 10px;
+cursor: pointer;
+transition:
+background-color 0.2s ease,
+color 0.2s ease,
+transform 0.2s ease;
+}
+
+.empresa-boton-catalogo:hover {
+background-color: #1d4d32;
+border-color: #1d4d32;
+color: #fff;
+transform: translateY(-2px);
+}
+
+.empresa-boton-catalogo:focus-visible {
+outline: 3px solid #d6a84f;
+outline-offset: 4px;
+}
+
+/* =====================================
+ADAPTACIÓN A MÓVILES
+===================================== */
+
+@media (max-width: 768px) {
+.empresa-pagina {
+padding: 24px 16px 40px;
+}
+
+.empresa-presentacion {
+grid-template-columns: minmax(0, 1fr);
+gap: 26px;
+}
+
+.empresa-menu-contenedor {
+height: auto;
+max-height: 440px;
+aspect-ratio: 4 / 3;
+border-radius: 14px;
+}
+
+.empresa-menu-imagen {
+object-fit: contain;
+}
+
+.empresa-informacion h1 {
+font-size: 1.8rem;
+}
+
+.empresa-boton-catalogo {
+width: 100%;
+box-sizing: border-box;
+}
+}
+
+@media (max-width: 400px) {
+.empresa-menu-contenedor {
+aspect-ratio: 3 / 4;
+max-height: 400px;
+}
+}
+.catalogo-empresa {
+width: 100%;
+max-width: 1400px;
+margin: 0 auto;
+padding: 32px 24px 60px;
+box-sizing: border-box;
+}
+
+.catalogo-volver {
+display: inline-block;
+margin-bottom: 24px;
+color: #286342;
+font-weight: 600;
+text-decoration: none;
+}
+
+.catalogo-volver:hover {
+text-decoration: underline;
+}
+
+.catalogo-empresa-header {
+margin-bottom: 28px;
+}
+
+.catalogo-empresa-header h1 {
+margin: 0 0 12px;
+font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.catalogo-empresa-header p {
+color: #555;
+line-height: 1.7;
+}
+
+.tabla-productos-contenedor {
+width: 100%;
+overflow-x: auto;
+border: 1px solid #e4e4dc;
+border-radius: 12px;
+background: #fff;
+}
+
+.tabla-productos {
+width: 100%;
+min-width: 1000px;
+border-collapse: collapse;
+text-align: left;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+padding: 14px 16px;
+border-bottom: 1px solid #e8e8e2;
+vertical-align: top;
+line-height: 1.6;
+}
+
+.tabla-productos th {
+background: #286342;
+color: #fff;
+font-weight: 600;
+}
+
+.tabla-productos tbody tr:nth-child(even) {
+background: #f7f8f4;
+}
+
+.tabla-productos tbody tr:hover {
+background: #edf4ed;
+}
+
+.catalogo-vacio {
+padding: 40px 24px;
+border-radius: 12px;
+background: #f7f5ef;
+text-align: center;
+line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+.catalogo-empresa {
+padding: 24px 14px 40px;
+}
+}
+/* =========================================
+CATÁLOGO DE EMPRESAS
+========================================= */
+
+.catalogo-empresa {
+width: 100%;
+max-width: 1400px;
+min-height: 60vh;
+margin: 0 auto;
+padding: 40px 24px 70px;
+box-sizing: border-box;
+color: #26352b;
+}
+
+.catalogo-volver {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+padding: 11px 18px;
+margin-bottom: 30px;
+border: 1px solid #286342;
+border-radius: 9px;
+background: #fff;
+color: #286342;
+font-weight: 600;
+text-decoration: none;
+transition: background 0.2s, color 0.2s;
+}
+
+.catalogo-volver:hover {
+background: #286342;
+color: #fff;
+}
+
+.catalogo-empresa-header {
+padding: 32px;
+margin-bottom: 32px;
+border-radius: 18px;
+background: linear-gradient(135deg, #edf4e9, #faf8ef);
+border: 1px solid #e0e8da;
+}
+
+.catalogo-empresa-header h1 {
+margin: 0 0 12px;
+color: #214d33;
+font-size: clamp(1.8rem, 4vw, 2.8rem);
+line-height: 1.2;
+}
+
+.catalogo-empresa-header p {
+margin: 0;
+color: #58665b;
+font-size: 1.05rem;
+line-height: 1.7;
+}
+
+/* MENSAJE CUANDO TODAVÍA NO HAY PRODUCTOS */
+
+.catalogo-vacio {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 14px;
+min-height: 220px;
+padding: 35px 24px;
+border: 1px dashed #b8cbb9;
+border-radius: 16px;
+background: #f8faf6;
+text-align: center;
+}
+
+.catalogo-vacio p {
+margin: 0;
+color: #4b5d4e;
+font-size: 1.05rem;
+line-height: 1.7;
+}
+
+/* TABLA DE PRODUCTOS */
+
+.tabla-productos-contenedor {
+width: 100%;
+overflow-x: auto;
+border: 1px solid #e0e6dc;
+border-radius: 14px;
+background: #fff;
+box-shadow: 0 8px 24px rgba(31, 67, 43, 0.07);
+}
+
+.tabla-productos {
+width: 100%;
+min-width: 1000px;
+border-collapse: separate;
+border-spacing: 0;
+text-align: left;
+}
+
+.tabla-productos th {
+padding: 17px 16px;
+background: #286342;
+color: #fff;
+font-size: 0.9rem;
+font-weight: 700;
+white-space: nowrap;
+}
+
+.tabla-productos td {
+padding: 17px 16px;
+border-bottom: 1px solid #e9eee6;
+color: #39463b;
+font-size: 0.92rem;
+line-height: 1.65;
+vertical-align: top;
+}
+
+.tabla-productos tbody tr:nth-child(even) {
+background: #f7f9f5;
+}
+
+.tabla-productos tbody tr:hover {
+background: #edf5eb;
+}
+
+.tabla-productos tbody tr:last-child td {
+border-bottom: none;
+}
+
+/* ENLACES Y BOTONES DEL CATÁLOGO */
+
+.catalogo-empresa a:focus-visible {
+outline: 3px solid #d9aa45;
+outline-offset: 4px;
+}
+
+/* MÓVILES */
+
+@media (max-width: 768px) {
+.catalogo-empresa {
+padding: 24px 15px 45px;
+}
+
+.catalogo-empresa-header {
+padding: 24px 20px;
+margin-bottom: 24px;
+}
+
+.catalogo-volver {
+margin-bottom: 22px;
+}
+
+.tabla-productos {
+min-width: 1000px;
+}
+}
+
+.catalogo-menu {
+  width: 100%;
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.catalogo-menu h2 {
+  margin-bottom: 24px;
+  color: #315c3b;
+  font-size: 1.7rem;
+}
+
+.catalogo-menu-imagen {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 12%);
+}
+
+.catalogo-productos {
+  width: 100%;
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .catalogo-menu {
+    padding: 12px;
+  }
+
+  .catalogo-menu h2 {
+    font-size: 1.4rem;
+  }
+}
+
+.catalogo-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 12px;
+}
+
+.catalogo-filtros input,
+.catalogo-filtros select {
+  min-height: 46px;
+  padding: 12px 16px;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  background: #fff;
+  color: #252525;
+  font: inherit;
+}
+
+.catalogo-filtros input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.catalogo-filtros select {
+  min-width: 190px;
+}
+
+.catalogo-contador {
+  margin: 12px 0;
+  color: #666;
+}
+
+.tabla-catalogo-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.tabla-productos {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+  padding: 14px;
+  border-bottom: 1px solid #ededed;
+  vertical-align: top;
+}
+
+.tabla-productos th {
+  background: #f5f1e8;
+  color: #333;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.tabla-productos td {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tabla-productos tbody tr:hover {
+  background: #faf8f3;
+}
+
+.precio-producto {
+  color: #286746;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.catalogo-vacio {
+  padding: 30px !important;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .catalogo-filtros {
+    flex-direction: column;
+  }
+
+  .catalogo-filtros input,
+  .catalogo-filtros select {
+    width: 100%;
+  }
+}
+
+/* ===== CATÁLOGOS DE EMPRESAS ===== */
+
+.tabla-catalogo {
+  width: 100%;
+  margin: 24px auto;
+  color: #26352c;
+}
+
+.catalogo-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.catalogo-filtros input,
+.catalogo-filtros select {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #c8d8c9;
+  border-radius: 10px;
+  background: #fff;
+  color: #26352c;
+  font: inherit;
+}
+
+.catalogo-filtros input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.catalogo-filtros input:focus,
+.catalogo-filtros select:focus {
+  outline: 2px solid #4d8057;
+  outline-offset: 2px;
+}
+
+.catalogo-contador {
+  margin: 12px 0;
+  color: #54705a;
+  font-weight: 600;
+}
+
+.tabla-catalogo-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #d5e3d5;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgb(31 70 40 / 8%);
+}
+
+.tabla-productos {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  font-size: 14px;
+}
+
+.tabla-productos thead {
+  background: #24583b;
+  color: #fff;
+}
+
+.tabla-productos th {
+  padding: 15px 13px;
+  text-align: left;
+  font-weight: 700;
+  white-space: nowrap;
+  border-bottom: 3px solid #d6b76c;
+}
+
+.tabla-productos td {
+  padding: 13px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e1eae1;
+  line-height: 1.5;
+}
+
+.tabla-productos tbody tr:nth-child(odd) {
+  background: #f0f7ef;
+}
+
+.tabla-productos tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+.tabla-productos tbody tr:hover {
+  background: #dcebd9;
+  transition: background 0.2s ease;
+}
+
+.tabla-productos tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.precio-producto {
+  color: #24613d;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.catalogo-vacio {
+  padding: 30px !important;
+  text-align: center !important;
+  color: #647568;
+}
+
+/* ===== BOTONES DE NAVEGACIÓN ===== */
+
+.empresa-boton-catalogo,
+.empresa-boton-inicio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #24583b;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.empresa-boton-catalogo:hover,
+.empresa-boton-inicio:hover {
+  background: #36734d;
+  transform: translateY(-1px);
+}
+
+.empresa-boton-catalogo:focus-visible,
+.empresa-boton-inicio:focus-visible {
+  outline: 3px solid #d6b76c;
+  outline-offset: 3px;
+}
+
+.empresa-navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .catalogo-filtros {
+    flex-direction: column;
+  }
+
+  .catalogo-filtros input,
+  .catalogo-filtros select {
+    width: 100%;
+  }
+
+  .tabla-productos {
+    font-size: 13px;
+  }
+
+  .tabla-productos th,
+  .tabla-productos td {
+    padding: 10px;
+  }
+}
+
+.empresa-navegacion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 24px;
+}
+
+.empresa-boton-inicio,
+.empresa-boton-catalogo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background-color: #24583b;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #24583b;
+  transition: background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+  cursor: pointer;
+}
+
+.empresa-boton-inicio:hover,
+.empresa-boton-catalogo:hover {
+  background-color: #fff;
+  color: #24583b;
+  transform: translateY(-2px);
+}
+
+.empresa-menu-contenedor {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.empresa-menu-imagen {
+  display: block;
+  width: 100%;
+  max-height: 620px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+@media (max-width: 600px) {
+  .empresa-navegacion {
+    flex-wrap: wrap;
+  }
+
+  .empresa-boton-inicio,
+  .empresa-boton-catalogo {
+    padding: 10px 16px;
+  }
+
+  .empresa-menu-imagen {
+    max-height: 450px;
   }
 }

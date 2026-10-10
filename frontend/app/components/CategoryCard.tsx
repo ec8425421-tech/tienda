@@ -2,14 +2,16 @@ import Link from "next/link";
 
 type CategoryCardProps = {
   name: string;
-  icon: string;
   href: string;
+  icon?: string;
+  image?: string;
 };
 
 export default function CategoryCard({
   name,
-  icon,
   href,
+  icon,
+  image,
 }: CategoryCardProps) {
   return (
     <Link
@@ -17,7 +19,15 @@ export default function CategoryCard({
       className="category-card"
     >
       <div className="category-icon">
-        {icon}
+        {image ? (
+          <img
+            src={image}
+            alt={name}
+            className="category-image"
+          />
+        ) : (
+          <span>{icon}</span>
+        )}
       </div>
 
       <h3>{name}</h3>

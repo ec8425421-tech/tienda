@@ -5,8 +5,8 @@ import Footer from "./components/Footer";
 import { CartProvider } from "./context/CartContext";
 
 export const metadata = {
-  title: "Tienda Teya",
-  description: "Tu vivero en línea",
+  title: "Riqueza local",
+  Description: "..",
 };
 
 export default function RootLayout({
